@@ -5,30 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="Css/login.css">
 </head>
 
 <body>
     <header>
-
+            <div>
+                LOGO - <b>ZUNOX 3D</b>
+            </div>
     </header>
     <main>
         <section>
             <h1>
                 Inicio sesión
             </h1>
-            <form action="login.php" method="POST">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required><br><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required><br><br>
-                <input type="submit" value="Login">
-            </form>
-            </h1>
+                <div class="caja-login">
+                <form action="login.php" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Ingresa tu usuario" style="background-color: var(--bg_cajas);" required><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" style="background-color: var(--bg_cajas);" required><br><br>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
         </section>
     </main>
     <footer>
 
     </footer>
 </body>
-
 </html>
