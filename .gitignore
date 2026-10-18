@@ -444,7 +444,7 @@ secrets.json
 .env.production.local
 config.local.js
 
-# 3. Archivos ocultos o basura del Sistema Operativo (Windows / Mac)
+# 3. Archivos ocultos o basura del Sistema Operativo (Windows / Mac)()
 Thumbs.db
 ehthumbs.db
 Desktop.ini
