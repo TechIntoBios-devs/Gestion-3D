@@ -13,25 +13,95 @@
         </div>
         <div>
             <div class="salida">
-                <img src="Iconos/salida.svg">
+                <span>
+                    <img src="Iconos/salida.svg">
+                </span>
             </div>
         </div>
-        <div>
-            <div class="menu">
-                <img src="Iconos/menu.svg">
-                <table>
-
-                <td> HOLA QUE TAL </td>
-                
-                </table>
-            </div>
     </header> 
 
     <main>
+        <section id="section-1">
+            <p class="p-1">
+                NUEVO PEDIDO
+            </p>
+            <p class="p-2">
+                Nuevo Registro
+            </p>
+            <p class="p-3">
+                Ingresá los datos y los prodcutos del pedido.
+            </p>
+        </section>
+        <section id="section-2">
+            <div class="contenedor-datos">
+                <h4>Datos de contacto</h4>
+                <div class="sub-contenedor-datos">
+                    <div>
+                        <p>
+                            Nombre
+                        </p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>
+                            Apellido
+                        </p>
+                        <input type="text">
+                    </div>
+                </div>
+                <p>Mail (opcional)</p>
+                <input type="email">
+                <p>Teléfono</p>
+                <input type="tel">
+                <p>Zona</p>
+                <input type="text">
+                <p>Notas de pedido</p>
+                <textarea></textarea>
+            </div>
+        </section>
         <section>
-            <form action="" method="post">
-                
-            </form>
+            <div>
+                <h3>Productos</h3>
+                <div>
+                    <p>Categoría</p>
+                    <select>
+
+                    </select>
+                    <p>Producto</p>
+                    <select>
+                        
+                    </select>
+                    <div>
+                        <div>
+                            <p>Cantidad</p>
+                            <input type="number">
+                        </div>
+                        <div>
+                            <p>Precio unitario</p>
+                            <input type="number">
+                        </div>
+                        <div>
+                            <span>
+                                <img src="Iconos/basura.svg">
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Subtotal</p>
+                        <label>$</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Total</p>
+                    <label>$</label>
+                </div>
+                <button>+ Agregar producto</button>
+            </div>
+        </section>
+        <section>
+            <input type="submit" value="Guardar">
         </section>
     </main>
 
