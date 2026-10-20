@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos y Categorias</title>
+    <link rel="icon" href="Iconos/logo.svg">
     <link rel="stylesheet" href="Css/products.css">
 </head>
 <body>
     <header>
+        <div class="contenedor-logo">
+            <img src="Iconos/logo.svg" alt="Logo">
+        </div>
         <div>
             <img src="Iconos/lista-del-portapapeles.svg" alt="Logo">
         </div>
@@ -16,8 +20,8 @@
         <section>
             <h1> Productos y Categorias</h1>
         </section>
-           <h2>Cargar Productos</h2>
             <div class="caja-Productos">
+            <h2>Cargar Productos</h2><br>
             <form action="cargarProducto" method="post">
                 <label for="categoria">Categoria:</label><br>
                 <select id="categoria" name="categoria" required>
@@ -27,19 +31,21 @@
                     <option value="Categoria 3">Categoria 3</option>
                 </select><br><br>
                 <label for="nombre">Nombre del Producto:</label>
-                <label for="Producto">Producto:</label><br>
-                <select id="Producto" name="Producto" required>
-                    <option value="">Selecciona un producto</option>
-                    <option value="Producto 1">Producto 1</option>
-                    <option value="Producto 2">Producto 2</option>
-                    <option value="Producto 3">Producto 3</option>
-                </select><br><br>
+                <input type="text" id="Producto" name="Producto" placeholder="Ingresa el nombre del producto" required><br><br>
                 <label for="Precio">Precio:</label><br>
                 <input type="number" id="Precio" name="Precio" placeholder="Ingresa el precio del producto" required><br><br>
+                <input type="submit" value="Cargar Producto">
             </form>
             </div>
         <section>
-
+            <div class="caja-Productos">
+                <h2>Crear Categorias</h2><br>
+                <form action="cargarCategoria" method="post">
+                    <label for="nombreCategoria">Nombre de la Categoria:</label>
+                    <input type="text" id="nombreCategoria" name="nombreCategoria" placeholder="Ej: Accesorios"><br><br>
+                    <input type="submit" value="Cargar Categoria">
+                </form>
+            </div>
         </section>
     </main>
     <footer>

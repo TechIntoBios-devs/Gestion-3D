@@ -91,9 +91,17 @@ main {
 }
 h1 {
     font-family: var(--texto_fuente);
+    font-size: 24px;
     color: var(--header_bg);
     margin: 20px 0;
     text-align: center;
+}
+h2 {
+    font-family: var(--texto_fuente);
+    font-size: 20px;
+    color: var(--header_bg);
+    margin: 20px 0;
+    text-align: left;
 }
 
 label {
@@ -106,7 +114,7 @@ input[type="text"]{
     font-family: var(--texto_fuente);
 }
 input[type="text"],
-input[type="password"] {
+input[type="number"],select{
     font-family: var(--texto_fuente);
     display: block;
     width: 100%;
@@ -121,19 +129,40 @@ input[type="password"] {
 input[type="text"]:hover{
     border-color: #00E5FF;
 }
-input[type="password"]:hover{
+input[type="number"]:hover{
     border-color: #00E5FF;
 }
 input[type="text"]:placeholder {
     color: var(--bg_text);
 }
+input[type="number"]:placeholder {
+    color: var(--bg_text);
+}
+.select:hover{
+    border-color: #00E5FF;
+}
+.select:focus {
+    border-color: #00E5FF;
+}
+.select {
+    font-family: var(--texto_fuente);
+    display: block;
+    width: 100%;
+    background-color: var(--bg_card) !important;
+    border: 1px solid #1F2831;
+    border-radius: 8px;
+    color: var(--bg_text);
+    padding: 10px 12px;
+    outline: none;
+    text-align: left;
+}
 
 input[type="text"]:focus,
-input[type="password"]:focus {
+input[type="number"]:focus {
     border-color: #00E5FF;
 }
 
-input[type="submit"] {
+input[type="submit"]{
     font-family: var(--texto_fuente);
     width: 100%;
     background-color: #00E5FF;

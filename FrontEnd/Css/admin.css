@@ -54,6 +54,9 @@ header{
 }
 
 header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
 }
 
@@ -64,6 +67,17 @@ header div b{
 header div img{
     width: 15px;
     height: 15px;
+}
+
+.contenedor-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 20px;
+    height: 20px;
 }
 
 .salida{
