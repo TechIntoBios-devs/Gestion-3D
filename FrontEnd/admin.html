@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="Css/admin.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div>
@@ -18,7 +20,7 @@
                 </span>
             </div>
         </div>
-    </header> 
+    </header>
 
     <main>
         <section id="section-1">
@@ -42,7 +44,7 @@
                         </p>
                         <input type="text">
                     </div>
-                    <div>
+                    <div class="apellido">
                         <p>
                             Apellido
                         </p>
@@ -59,19 +61,19 @@
                 <textarea></textarea>
             </div>
         </section>
-        <section>
-            <div>
-                <h3>Productos</h3>
-                <div>
+        <section id="section-3">
+            <div class="contenedor-prodcuctos">
+                <h4>Productos</h4>
+                <div class="sub-contendor-productos">
                     <p>Categoría</p>
                     <select>
 
                     </select>
                     <p>Producto</p>
                     <select>
-                        
+
                     </select>
-                    <div>
+                    <div class="contenedor-precios">
                         <div>
                             <p>Cantidad</p>
                             <input type="number">
@@ -92,16 +94,19 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="contenedor-total">
+                <div class="fila-total">
                     <p>Total</p>
                     <label>$</label>
                 </div>
-                <button>+ Agregar producto</button>
+                <button type="button" class="btn-agregar">+ Agregar producto</button>
             </div>
         </section>
-        <section>
-            <input type="submit" value="Guardar">
+        <section id="section-guardar">
+            <button type="submit" class="btn-guardar">
+                <img src="Iconos/Check.svg" alt="">
+                Guardar
+            </button>
         </section>
     </main>
 
@@ -109,4 +114,5 @@
 
     </footer>
 </body>
+
 </html>

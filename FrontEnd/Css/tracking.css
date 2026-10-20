@@ -22,8 +22,237 @@
     --radius: 14px;
 }
 
+/* ---------- Base ---------- */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #0a0f14;
+  color: #e8edf2;
+  max-width: 380px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+small {
+  font-size: 11px;
+  color: #8b98a5;
+}
+
+/* ---------- Header ---------- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: #0f161d;
+  border-bottom: 1px solid #1c2630;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #22d3ee;
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+}
+.logo img {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+header h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+header nav a {
+  color: #8b98a5;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* ---------- Contenido ---------- */
+main {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+main section {
+  background: #0e151c;
+  border: 1px solid #1c2630;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* ---------- Titulo del pedido ---------- */
+.titulo {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.titulo small {
+  color: #22d3ee;
+  letter-spacing: 0.5px;
+}
+
+.titulo h1 {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 6px 0;
+}
+
+.titulo p {
+  font-size: 13px;
+  color: #8b98a5;
+}
+
+/* ---------- Estado actual ---------- */
+.estado {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  column-gap: 12px;
+  background: #2a2412;
+  border-color: #5c4a14;
+}
+
+.estado .icono {
+  grid-row: span 2;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+
+.estado .icono img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.estado small {
+  color: #f5c542;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+
+.estado h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #f5c542;
+  margin-bottom: 0;
+}
+
+.estado p {
+  grid-column: 1 / -1;
+  margin-top: 14px;
+  font-size: 12px;
+}
+
+/* ---------- Titulos de tarjeta ---------- */
+section h2 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+/* ---------- Datos de contacto ---------- */
+dt {
+  font-size: 11px;
+  color: #8b98a5;
+  margin-top: 14px;
+}
+
+dd {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+dd strong {
+  font-weight: 600;
+}
+
+/* ---------- Productos ---------- */
+.productos {
+  position: relative;
+}
+
+.productos > p {
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  font-size: 11px;
+  color: #8b98a5;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 11px;
+  font-weight: 400;
+  color: #8b98a5;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+th:last-child,
+td:last-child {
+  text-align: right;
+}
+
+td {
+  padding: 12px 0;
+  font-size: 13px;
+  border-bottom: 1px solid #1c2630;
+}
+
+td strong {
+  font-size: 14px;
+}
+
+tfoot th,
+tfoot td {
+  padding-top: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #e8edf2;
+  border: none;
+}
+
+tfoot td strong {
+  color: #22d3ee;
+  font-size: 15px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  margin: 0 16px 16px;
+  padding: 12px;
+  border: 1px solid #1c2630;
+  border-radius: 12px;
+  font-size: 11px;
+  color: #8b98a5;
+}
+
+footer p + p {
+  margin-top: 10px;
 }

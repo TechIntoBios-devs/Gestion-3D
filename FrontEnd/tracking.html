@@ -1,21 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro Guardado</title>
+    <link href="Css/tracking.css" rel="stylesheet">
 </head>
 <body>
-    <header>
 
-    </header>
+  <header>
+  <div class="marca">
+    <span class="logo">
+      <img src="Iconos/lista-del-portapapeles.svg" alt="Registro">
+    </span>
+    <h2>Registro</h2>
+  </div>
+  <nav><a href="#">Pedidos</a></nav>
+</header>
 
-    <main>
-        <section>
-            <form action=""></form>
-        </section>
-    </main>
+  <main>
 
-    <footer></footer>
+    <section class="titulo">
+      <small>PEDIDO #1048</small>
+      <h1>Registro guardado</h1>
+      <p>Los datos del pedido, en un solo lugar.</p>
+    </section>
+
+    <section class="estado">
+      <span class="icono">
+        <img src="Iconos/calendario-reloj.svg" alt="Reloj">
+      </span>
+      <small>ESTADO ACTUAL</small>
+      <h2>Pendiente</h2>
+      <p>El pedido esta registrado y aun no se realizo.</p>
+    </section>
+
+    <section>
+      <h2>Datos de contacto</h2>
+      <dl>
+        <dt>Nombre</dt>
+        <dd><strong>Martina</strong></dd>
+
+        <dt>Apellido</dt>
+        <dd><strong>Lopez</strong></dd>
+
+        <dt>Mail (opcional)</dt>
+        <dd><strong>martina.lopez@gmail.com</strong></dd>
+
+        <dt>Telefono</dt>
+        <dd><strong>+54 9 11 5678 2345</strong></dd>
+
+        <dt>Zona</dt>
+        <dd><strong>Palermo</strong></dd>
+
+        <dt>Observacion general</dt>
+        <dd><strong>Entregar por la tarde.</strong></dd>
+      </dl>
+    </section>
+
+    <section class="productos">
+      <h2>Productos</h2>
+      <p>5 unidades</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre del producto</th>
+            <th>Importe</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Cuaderno A5 x2<br>
+              <small>$4.500 por unidad</small>
+            </td>
+            <td><strong>$9.000</strong></td>
+          </tr>
+          <tr>
+            <td>
+              Boligrafo negro x3<br>
+              <small>$800 por unidad</small>
+            </td>
+            <td><strong>$2.400</strong></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Total del pedido</th>
+            <td><strong>$11.400</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+  </main>
+
+    <footer>
+        <p>🔒 Solo lectura Datos guardados</p>
+    </footer>
 </body>
 </html>
