@@ -19,7 +19,23 @@
            <h2>Cargar Productos</h2>
             <div class="caja-Productos">
             <form action="cargarProducto" method="post">
-                <label for="categoria">Categoria:</label>
+                <label for="categoria">Categoria:</label><br>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecciona una categoria</option>
+                    <option value="Categoria 1">Categoria 1</option>
+                    <option value="Categoria 2">Categoria 2</option>
+                    <option value="Categoria 3">Categoria 3</option>
+                </select><br><br>
+                <label for="nombre">Nombre del Producto:</label>
+                <label for="Producto">Producto:</label><br>
+                <select id="Producto" name="Producto" required>
+                    <option value="">Selecciona un producto</option>
+                    <option value="Producto 1">Producto 1</option>
+                    <option value="Producto 2">Producto 2</option>
+                    <option value="Producto 3">Producto 3</option>
+                </select><br><br>
+                <label for="Precio">Precio:</label><br>
+                <input type="number" id="Precio" name="Precio" placeholder="Ingresa el precio del producto" required><br><br>
             </form>
             </div>
         <section>
