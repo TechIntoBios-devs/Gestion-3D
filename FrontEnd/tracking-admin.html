@@ -14,14 +14,14 @@
     <header>
         <div>
             <div class="contenedor-logo">
-                <img src="Iconos/logo.svg" class="logo"> 
+                <img src="Iconos/logo.svg" class="logo" alt="Logo"> 
             </div>
             <b>ZUNOX 3D</b>
         </div>
         <div>
             <div class="salida">
                 <span>
-                    <img src="Iconos/salida.svg">
+                    <img src="Iconos/salida.svg" alt="Salida">
                 </span>
             </div>
         </div>
@@ -30,51 +30,86 @@
     <main>
 
         <section class="titulo">
-            <small>PEDIDO #1048</small>
+            <div class="titulo-top">
+                <small>PEDIDO #1048</small>
+                <span class="badge-admin">Administrador</span>
+            </div>
             <h1>Registro guardado</h1>
             <p>Los datos del pedido, en un solo lugar.</p>
         </section>
 
         <section class="estado">
-            <span class="icono">
-                <img src="Iconos/calendario-reloj.svg" alt="Reloj">
-            </span>
-            <small>ESTADO ACTUAL</small>
-            <h2>Pendiente</h2>
-            <p>El pedido esta registrado y aun no se realizo.</p>
-            <div>
-                <h4>
-                    
-                </h4>
+            <div class="estado-header">
+                <div class="estado-icono">
+                    <img src="Iconos/calendario-reloj.svg" alt="Reloj">
+                </div>
+                <div class="estado-info">
+                    <small>ESTADO ACTUAL</small>
+                    <h2>Pendiente</h2>
+                </div>
+            </div>
+            <p class="estado-desc">El pedido está registrado y aún no se realizó.</p>
+
+            <div class="estado-divider"></div>
+
+            <div class="cambiar-estado">
+                <label class="lbl-cambiar">Cambiar estado</label>
+                <div class="opciones-estado">
+                    <label class="opcion-estado opcion-pendiente">
+                        <input type="radio" name="estado" value="pendiente" checked>
+                        <span class="punto-radio"></span>
+                        Pendiente
+                    </label>
+                    <label class="opcion-estado opcion-cancelado">
+                        <input type="radio" name="estado" value="cancelado">
+                        <span class="punto-radio"></span>
+                        Cancelado
+                    </label>
+                    <label class="opcion-estado opcion-realizado">
+                        <input type="radio" name="estado" value="realizado">
+                        <span class="punto-radio"></span>
+                        Realizado
+                    </label>
+                </div>
+
+                <label for="obs" class="lbl-obs">Observación general</label>
+                <textarea id="obs" placeholder="Observación del pedido...">Entregar por la tarde.</textarea>
+
+                <button type="submit" class="btn-guardar-cambios">
+                    <img src="Iconos/Check.svg" alt="">
+                    Guardar cambios
+                </button>
             </div>
         </section>
 
-        <section>
-            <h2>Datos de contacto</h2>
+        <section class="contacto">
+            <div class="header-tarjeta">
+                <h2>Datos de contacto</h2>
+                <button type="button" class="btn-editar">Editar</button>
+            </div>
             <dl>
                 <dt>Nombre</dt>
                 <dd><strong>Martina</strong></dd>
 
                 <dt>Apellido</dt>
-                <dd><strong>Lopez</strong></dd>
+                <dd><strong>López</strong></dd>
 
                 <dt>Mail (opcional)</dt>
                 <dd><strong>martina.lopez@gmail.com</strong></dd>
 
-                <dt>Telefono</dt>
+                <dt>Teléfono</dt>
                 <dd><strong>+54 9 11 5678 2345</strong></dd>
 
                 <dt>Zona</dt>
                 <dd><strong>Palermo</strong></dd>
-
-                <dt>Observacion general</dt>
-                <dd><strong>Entregar por la tarde.</strong></dd>
             </dl>
         </section>
 
         <section class="productos">
-            <h2>Productos</h2>
-            <p>5 unidades</p>
+            <div class="header-tarjeta">
+                <h2>Productos</h2>
+                <span class="unidades">5 unidades</span>
+            </div>
 
             <table>
                 <thead>
@@ -86,14 +121,14 @@
                 <tbody>
                     <tr>
                         <td>
-                            Cuaderno A5 x2<br>
+                            Cuaderno A5 ×2<br>
                             <small>$4.500 por unidad</small>
                         </td>
                         <td><strong>$9.000</strong></td>
                     </tr>
                     <tr>
                         <td>
-                            Boligrafo negro x3<br>
+                            Bolígrafo negro ×3<br>
                             <small>$800 por unidad</small>
                         </td>
                         <td><strong>$2.400</strong></td>
@@ -117,5 +152,7 @@
         </p>
     </footer>
 </body>
+
+</html>
 
 </html>
