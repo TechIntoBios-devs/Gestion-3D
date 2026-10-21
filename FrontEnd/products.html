@@ -1,55 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos y Categorias</title>
+    <title>Productos y Categorías</title>
     <link rel="icon" href="Iconos/logo.svg">
     <link rel="stylesheet" href="Css/products.css">
 </head>
+
 <body>
     <header>
-        <div class="contenedor-logo">
-            <img src="Iconos/logo.svg" alt="Logo">
+        <div>
+            <div class="contenedor-logo">
+                <img src="Iconos/logo.svg" class="logo" alt="Logo">
+            </div>
+            <b>ZUNOX 3D</b>
         </div>
         <div>
-            <img src="Iconos/lista-del-portapapeles.svg" alt="Logo">
+            <div class="salida">
+                <span>
+                    <img src="Iconos/puntos.svg" alt="Opciones">
+                </span>
+            </div>
         </div>
     </header>
+
     <main>
-        <section>
-            <h1> Productos y Categorias</h1>
+        <section id="section-1">
+            <p class="p-1">CATÁLOGO</p>
+            <h1 class="p-2">Productos y categorías</h1>
         </section>
-            <div class="caja-Productos">
-            <h2>Cargar Productos</h2><br>
-            <form action="cargarProducto" method="post">
-                <label for="categoria">Categoria:</label><br>
-                <select id="categoria" name="categoria" required>
-                    <option value="">Selecciona una categoria</option>
-                    <option value="Categoria 1">Categoria 1</option>
-                    <option value="Categoria 2">Categoria 2</option>
-                    <option value="Categoria 3">Categoria 3</option>
-                </select><br><br>
-                <label for="nombre">Nombre del Producto:</label>
-                <input type="text" id="Producto" name="Producto" placeholder="Ingresa el nombre del producto" required><br><br>
-                <label for="Precio">Precio:</label><br>
-                <input type="number" id="Precio" name="Precio" placeholder="Ingresa el precio del producto" required><br><br>
-                <input type="submit" value="Cargar Producto">
-            </form>
+
+        <!-- Card: Cargar producto -->
+        <section id="section-cargar-producto">
+            <div class="contenedor-datos">
+                <h4>Cargar producto</h4>
+                <form action="cargarProducto" method="POST">
+                    <p>Categoría</p>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Selecciona una categoría</option>
+                        <option value="Papelería">Papelería</option>
+                        <option value="Accesorios">Accesorios</option>
+                        <option value="Modelos 3D">Modelos 3D</option>
+                    </select>
+
+                    <p>Nombre del producto</p>
+                    <input type="text" id="nombreProducto" name="nombreProducto" placeholder="Cuaderno A5" required>
+
+                    <p>Precio</p>
+                    <input type="number" id="precio" name="precio" placeholder="$4.500" required>
+
+                    <button type="submit" class="btn-submit">Cargar producto</button>
+                </form>
             </div>
-        <section>
-            <div class="caja-Productos">
-                <h2>Crear Categorias</h2><br>
-                <form action="cargarCategoria" method="post">
-                    <label for="nombreCategoria">Nombre de la Categoria:</label>
-                    <input type="text" id="nombreCategoria" name="nombreCategoria" placeholder="Ej: Accesorios"><br><br>
-                    <input type="submit" value="Cargar Categoria">
+        </section>
+
+        <!-- Card: Crear categoría -->
+        <section id="section-crear-categoria">
+            <div class="contenedor-datos">
+                <h4>Crear categoría</h4>
+                <form action="cargarCategoria" method="POST">
+                    <p>Nombre de categoría</p>
+                    <input type="text" id="nombreCategoria" name="nombreCategoria" placeholder="Ej.: Accesorios" required>
+
+                    <button type="submit" class="btn-submit">Cargar categoría</button>
                 </form>
             </div>
         </section>
     </main>
-    <footer>
-
-    </footer>
 </body>
+
 </html>
