@@ -13,7 +13,7 @@
     <header>
         <div>
             <div class="contenedor-logo">
-                <img src="Iconos/logo.svg" class="logo"> 
+                <img src="Iconos/logo.svg" class="logo">
             </div>
             <b>ZUNOX 3D</b>
         </div>
@@ -27,91 +27,93 @@
     </header>
 
     <main>
-        <section id="section-1">
-            <p class="p-1">
-                NUEVO PEDIDO
-            </p>
-            <p class="p-2">
-                Nuevo Registro
-            </p>
-            <p class="p-3">
-                Ingresá los datos y los prodcutos del pedido.
-            </p>
-        </section>
-        <section id="section-2">
-            <div class="contenedor-datos">
-                <h4>Datos de contacto</h4>
-                <div class="sub-contenedor-datos">
-                    <div>
-                        <p>
-                            Nombre
-                        </p>
-                        <input type="text">
+        <form>
+            <section id="section-1">
+                <p class="p-1">
+                    NUEVO PEDIDO
+                </p>
+                <p class="p-2">
+                    Nuevo Registro
+                </p>
+                <p class="p-3">
+                    Ingresá los datos y los prodcutos del pedido.
+                </p>
+            </section>
+            <section id="section-2">
+                <div class="contenedor-datos">
+                    <h4>Datos de contacto</h4>
+                    <div class="sub-contenedor-datos">
+                        <div>
+                            <p>
+                                Nombre
+                            </p>
+                            <input type="text">
+                        </div>
+                        <div class="apellido">
+                            <p>
+                                Apellido
+                            </p>
+                            <input type="text">
+                        </div>
                     </div>
-                    <div class="apellido">
-                        <p>
-                            Apellido
-                        </p>
-                        <input type="text">
+                    <p>Mail (opcional)</p>
+                    <input type="email">
+                    <p>Teléfono</p>
+                    <input type="tel">
+                    <p>Zona</p>
+                    <input type="text">
+                    <p>Notas de pedido</p>
+                    <textarea></textarea>
+                </div>
+            </section>
+            <section id="section-3">
+                <div class="contenedor-prodcuctos">
+                    <h4>Productos</h4>
+                    <div class="sub-contendor-productos">
+                        <p>Categoría</p>
+                        <select>
+
+                        </select>
+                        <p>Producto</p>
+                        <select>
+
+                        </select>
+                        <div class="contenedor-precios">
+                            <div>
+                                <p>Cantidad</p>
+                                <input type="number">
+                            </div>
+                            <div>
+                                <p>Precio unitario</p>
+                                <input type="number">
+                            </div>
+                            <div>
+                                <span>
+                                    <img src="Iconos/basura.svg">
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Subtotal</p>
+                            <label>$</label>
+                        </div>
                     </div>
                 </div>
-                <p>Mail (opcional)</p>
-                <input type="email">
-                <p>Teléfono</p>
-                <input type="tel">
-                <p>Zona</p>
-                <input type="text">
-                <p>Notas de pedido</p>
-                <textarea></textarea>
-            </div>
-        </section>
-        <section id="section-3">
-            <div class="contenedor-prodcuctos">
-                <h4>Productos</h4>
-                <div class="sub-contendor-productos">
-                    <p>Categoría</p>
-                    <select>
-
-                    </select>
-                    <p>Producto</p>
-                    <select>
-
-                    </select>
-                    <div class="contenedor-precios">
-                        <div>
-                            <p>Cantidad</p>
-                            <input type="number">
-                        </div>
-                        <div>
-                            <p>Precio unitario</p>
-                            <input type="number">
-                        </div>
-                        <div>
-                            <span>
-                                <img src="Iconos/basura.svg">
-                            </span>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Subtotal</p>
+                <div class="contenedor-total">
+                    <div class="fila-total">
+                        <p>Total</p>
                         <label>$</label>
                     </div>
+                    <button type="button" class="btn-agregar">+ Agregar producto</button>
                 </div>
-            </div>
-            <div class="contenedor-total">
-                <div class="fila-total">
-                    <p>Total</p>
-                    <label>$</label>
-                </div>
-                <button type="button" class="btn-agregar">+ Agregar producto</button>
-            </div>
-        </section>
-        <section id="section-guardar">
-            <button type="submit" class="btn-guardar">
-                <img src="Iconos/Check.svg" alt="">
-                Guardar
-            </button>
-        </section>
+            </section>
+            <section id="section-guardar">
+                <button type="submit" class="btn-guardar">
+                    <img src="Iconos/Check.svg" alt="">
+                    Guardar
+                </button>
+            </section>
+        </form>
     </main>
 
     <footer>
