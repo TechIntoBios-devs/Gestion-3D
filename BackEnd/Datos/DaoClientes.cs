@@ -7,8 +7,8 @@ namespace Datos;
 public class DaoClientes
 {
     private readonly AccesoDatos accesoDatos;
-    private const string cliente = "sp_AgregarCliente";
-
+    private const string procedimiento_cliente = "sp_AgregarCliente";
+    private const string existe_cliente = "SELECT EXISTS (SELECT 1 FROM Clientes WHERE Telefono_Cli = @TELEFONO)";
 
     public DaoClientes(AccesoDatos datos) => accesoDatos = datos;
 
@@ -16,7 +16,14 @@ public class DaoClientes
     {
         var command = new NpgsqlCommand();
         armarParametrosAgregarCliente(command, clientes);
-        return await accesoDatos.ejecutarProcedimientoAlmacenado(command, cliente) > 0;
+        return await accesoDatos.ejecutarProcedimientoAlmacenado(command, procedimiento_cliente) != 0;
+    }
+
+    public async Task<bool> existeCliente(Clientes clientes)
+    {
+        var command = new NpgsqlCommand();
+        command.Parameters.Add("@TELEFONO", NpgsqlDbType.Varchar, 20).Value = clientes.Telefono;
+        return await accesoDatos.existe("", command);
     }
 
     public void armarParametrosAgregarCliente(NpgsqlCommand command, Clientes clientes)
