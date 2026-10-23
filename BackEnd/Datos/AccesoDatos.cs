@@ -6,7 +6,7 @@ using System.Net.WebSockets;
 using System.Security.Cryptography;
 using Npgsql;
 
-namespace AccesoDatos;
+namespace Datos;
 
 public class AccesoDatos
 {
@@ -79,7 +79,7 @@ public class AccesoDatos
         }
         catch(NpgsqlException e)
         {
-            throw new Exception("No se encontro el procemiento", e);
+            throw new Exception("Error al ejecutar el procedimiento almacenado.", e);
         }
     }
 }
