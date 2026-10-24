@@ -3,6 +3,8 @@
 using System.Data;
 using System.Data.Common;
 using System.Net.WebSockets;
+using System.Reflection.Metadata.Ecma335;
+using System.Security.AccessControl;
 using System.Security.Cryptography;
 using Npgsql;
 
@@ -66,7 +68,7 @@ public class AccesoDatos
         }
     }
 
-    public async Task<int> ejecutarProcedimientoAlmacenado(NpgsqlCommand command, String procedimiento)
+    public async Task<int> ejecutarProcedimientoAlmacenado(NpgsqlCommand command, String procedimiento, bool scalar = false)
     {
         try
         {
@@ -74,6 +76,12 @@ public class AccesoDatos
             command.Connection = connection; 
             command.CommandText = procedimiento;
             command.CommandType = CommandType.StoredProcedure;
+
+            // if (scalar)
+            // {
+            //     object? result = await command.ExecuteScalarAsync();
+            //     return (1, result != null ? result.ToString()! : ""); 
+            // }
 
             return await command.ExecuteNonQueryAsync();
         }

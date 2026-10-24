@@ -14,8 +14,13 @@ public class NegocioProductos
         var productos = new Productos();
         productos.Id_categoria = id_categoria; 
         productos.Nombre = nombre; 
-        productos.Precio = precio; 
+        productos.Precio = precio;
 
-        return false;
+        if(!await daoProductos.existeProducto(productos))
+        {
+            return await daoProductos.agreagrProducto(productos);
+        }
+
+        return true;
     }
 }
