@@ -6,22 +6,22 @@ public class Productos
     private int id_categoria;
     private string nombre;
     private double precio;
-public Productos()
-{
-    id_producto = 0;
-    id_categoria = 0;
-    nombre = "Sin definir";
-    precio = 0;
-}
-public Productos(int id_producto, int id_categoria, string nombre, double precio)
-{
-    this.id_producto = id_producto;
-    this.id_categoria = id_categoria;
-    this.nombre = nombre;
-    this.precio = precio;        
-}
-public int Id_producto
-{
+    public Productos()
+    {
+        id_producto = 0;
+        id_categoria = 0;
+        nombre = "Sin definir";
+        precio = 0;
+    }
+    public Productos(int id_producto, int id_categoria, string nombre, double precio)
+    {
+        this.id_producto = id_producto;
+        this.id_categoria = id_categoria;
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+    public int Id_producto
+    {
         get
         {
             return id_producto;
@@ -29,21 +29,21 @@ public int Id_producto
         set
         {
             id_producto = value;
-        }        
-}
-public int Id_categoria
-{
+        }
+    }
+    public int Id_categoria
+    {
         get
         {
             return id_categoria;
-        }        
+        }
         set
         {
             id_categoria = value;
         }
-}
-public string Nombre
-{
+    }
+    public string Nombre
+    {
         get
         {
             return nombre;
@@ -52,16 +52,16 @@ public string Nombre
         {
             nombre = value;
         }
-}
-public double Precio
-{
+    }
+    public double Precio
+    {
         get
         {
             return precio;
-        }        
+        }
         set
         {
             precio = value;
         }
-}
+    }
 }
